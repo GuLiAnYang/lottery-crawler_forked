@@ -59,7 +59,7 @@ df.to_csv('zl1.csv',encoding="utf-16",sep=",",index=False,mode="a")
 ## 结果
 赛程赛果文档
 <div align="center" style="display: flex; gap: 20px;">
-    <img src="效果/赛程赛果.png" alt="赛程赛果效果图" width="300" />
+    <img src="效果/赛程赛果.png" alt="赛程赛果效果图" width="1000" />
 </div>
 积分文档
 <div align="center" style="display: flex; gap: 20px;">
