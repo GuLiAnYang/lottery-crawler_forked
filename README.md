@@ -10,6 +10,14 @@ pip install pandas
 
 ## 快速开始
   这里主要分为爬取和保存数据两个部分
+  输入指令运行xinxinet.py爬取赛程赛果
+```bash
+python xinxinet.py
+```
+输入指令运行xinxinet2.py爬取积分结果
+```bash
+python xinxinet2.py
+```
   ### 爬取
 1.找到想要爬取的网页的url
 2.使用requests.get获取网页内容
