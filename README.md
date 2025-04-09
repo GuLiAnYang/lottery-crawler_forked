@@ -56,4 +56,9 @@ for i in columns:#遍历键值表
 df = pd.DataFrame(dp, index=range(0,len(dp["matchTime"])))
 df.to_csv('zl1.csv',encoding="utf-16",sep=",",index=False,mode="a")
 ```
-
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="效果/赛程赛果.png" alt="赛程赛果效果图" width="300" />
+</div>
+<div align="center" style="display: flex; gap: 20px;">
+    <img src="效果/积分.png" alt="积分效果图" width="300" />
+</div>
