@@ -11,9 +11,9 @@ pip install pandas
 ## 快速开始
   这里主要分为爬取和保存数据两个部分
   ### 爬取
-    1.找到想要爬取的网页的url
-    2.使用requests.get获取网页内容
-    3.将内容转化为json格式
+1.找到想要爬取的网页的url
+2.使用requests.get获取网页内容
+3.将内容转化为json格式
 ```bash
 import requests,json,csv
 import pandas as pd
