@@ -36,17 +36,24 @@ response = c['value']['matchList']#简化获取到的数据
   ### 保存数据到excel
 使用pandas库来进行这一操作
 我们要先将数据整理为一个字典
+通过这个个代码获取到数据的所有键值用于创建字典(后面用于excel表第一列的列标)
 ```bash
 columns = []
 for d in c[0]["subMatchList"][0].keys():
     columns.append(d)
 ```
-通过这个个代码获取到数据的所有键值(后面用于第一列的列标)
+这部分代码遍历数据所有的值，保存到字典中对应的键值下
 ```bash
-for i in columns:
+dp = {}
+for i in columns:#遍历键值表
     e = []
-    for j in c[n]["subMatchList"]:
+    for j in c[n]["subMatchList"]:#查找每一组数据中这个键值对应的值
         e.append(j[i])
-    dp[i] = e
-dp['start_time'] = [time[n] for _ in range(len(e))]
+    dp[i] = e#创建字典
 ```
+最后将字典转化为DataFrame对象，并存入excel表格
+```bash
+df = pd.DataFrame(dp, index=range(0,len(dp["matchTime"])))
+df.to_csv('zl1.csv',encoding="utf-16",sep=",",index=False,mode="a")
+```
+
