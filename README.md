@@ -17,4 +17,4 @@
   url = "这里填要爬取的网页的url"
   response = requests.get(url=url)#获取网页内容
   ```
-  [!(https://webapi.sporttery.cn/gateway/uniform/football/league/getMatchResultV1.qry?seasonId=11817&uniformLeagueId=72&startDate=2025-04-05&endDate=2025-04-11))
+  [![例子](https://webapi.sporttery.cn/gateway/uniform/football/league/getMatchResultV1.qry?seasonId=11817&uniformLeagueId=72&startDate=2025-04-05&endDate=2025-04-11))
