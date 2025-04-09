@@ -17,4 +17,4 @@
   url = "这里填要爬取的网页的url"
   response = requests.get(url=url)#获取网页内容
   ```
-  [![例子]https://www.sporttery.cn/zqlszl/?showType=1&uniformLeagueId=72&seasonId=11817)
+  [![网页](https://www.sporttery.cn/zqlszl/?showType=1&uniformLeagueId=72&seasonId=11817))
